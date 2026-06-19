@@ -25,12 +25,6 @@
 
 <div ref="{{ rootRef }}" data-screen-label="Homepage" style="--bg:#FBF6EE; --surface:#FFFFFF; --ink:#21271F; --ink-soft:#6B6256; --green:#2C7438; --green-deep:#1B4A22; --accent:#F5802C; --line:rgba(33,39,31,.10); --radius:20px; --radius-sm:12px; --fd:'Space Grotesk',sans-serif; --fb:'Hanken Grotesk',sans-serif; background:var(--bg); color:var(--ink); font-family:var(--fb); min-height:100vh; overflow-x:hidden;">
 
-  <!-- DIRECTION SWITCHER -->
-  <div style="position:fixed; z-index:90; right:18px; bottom:18px; display:flex; gap:6px; padding:6px; background:rgba(255,255,255,.86); backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:999px; box-shadow:0 8px 30px rgba(0,0,0,.12);">
-    <button onClick="{{ pickA }}" style="{{ dirAStyle }}">Hanji</button>
-    <button onClick="{{ pickB }}" style="{{ dirBStyle }}">Morning Light</button>
-  </div>
-
   <!-- ANNOUNCEMENT MARQUEE -->
   <div style="background:var(--green-deep); color:#F2EEE3; overflow:hidden; white-space:nowrap;">
     <div style="display:inline-flex; gap:48px; padding:9px 24px; animation:gamsa-marquee 28s linear infinite; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:600;">
