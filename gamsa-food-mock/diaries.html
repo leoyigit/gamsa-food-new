@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  img{display:block;max-width:100%}
+  @keyframes gamsa-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  ::selection{background:#2C7438;color:#fff}
+</style>
+</helmet>
+
+<div data-screen-label="Persimmon Diaries" style="--bg:#FBF6EE; --surface:#FFFFFF; --ink:#21271F; --ink-soft:#6B6256; --green:#2C7438; --green-deep:#1B4A22; --accent:#F5802C; --line:rgba(33,39,31,.10); --radius:20px; --radius-sm:12px; --fd:'Space Grotesk',sans-serif; --fb:'Hanken Grotesk',sans-serif; background:var(--bg); color:var(--ink); font-family:var(--fb); min-height:100vh; overflow-x:hidden;">
+
+  <!-- ANNOUNCEMENT -->
+  <div style="background:var(--green-deep); color:#FBF6EE; overflow:hidden; white-space:nowrap;">
+    <div style="display:inline-flex; gap:48px; padding:9px 24px; animation:gamsa-marquee 28s linear infinite; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:600;">
+      <span>Free shipping on orders $40+</span><span style="opacity:.55">✺</span><span>Now available on Amazon</span><span style="opacity:.55">✺</span><span>Savory oatmeal, inspired by Korean juk</span><span style="opacity:.55">✺</span><span>Free shipping on orders $40+</span><span style="opacity:.55">✺</span><span>Now available on Amazon</span><span style="opacity:.55">✺</span><span>Savory oatmeal, inspired by Korean juk</span><span style="opacity:.55">✺</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header style="position:sticky; top:0; z-index:80; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line);">
+    <nav style="max-width:1280px; margin:0 auto; padding:16px 32px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center;">
+      <div style="display:flex; gap:30px; align-items:center; font-size:14.5px; font-weight:600;">
+        <a href="collection.html" style="color:var(--ink); text-decoration:none;">Shop</a>
+        <a href="index.html#recipes" style="color:var(--ink); text-decoration:none;">Recipes</a>
+        <a href="index.html#story" style="color:var(--ink); text-decoration:none;">Our Story</a>
+        <a href="diaries.html" style="color:var(--green); text-decoration:none;">The Persimmon Diaries</a>
+      </div>
+      <a href="index.html" style="text-decoration:none; text-align:center; line-height:1;">
+        <img src="assets/gamsa-logo-orange.svg" alt="Gamsa Foods" style="height:38px; width:auto; display:inline-block;">
+      </a>
+      <div style="display:flex; gap:20px; align-items:center; justify-content:flex-end;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color:var(--ink);"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="color:var(--ink);"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
+        <a href="collection.html" style="color:var(--ink); text-decoration:none;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8h12l-1 13H7L6 8z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section style="max-width:900px; margin:0 auto; padding:72px 32px 44px; text-align:center;">
+    <div style="font-family:'Noto Serif KR',serif; font-size:52px; line-height:1; color:var(--accent); margin-bottom:18px;">곶감</div>
+    <h1 style="font-family:var(--fd); font-weight:700; font-size:clamp(38px,5.2vw,68px); letter-spacing:-.03em; line-height:1; margin:0 0 18px;">The Persimmon Diaries</h1>
+    <p style="font-size:17.5px; line-height:1.6; color:var(--ink-soft); max-width:34em; margin:0 auto;">Our story of building Gamsa Foods — one bowl at a time. Founder notes, recipes, and the culture behind savory Korean breakfast.</p>
+  </section>
+
+  <!-- CATEGORIES -->
+  <div style="max-width:1280px; margin:0 auto; padding:0 32px 36px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+    <span style="background:var(--green); color:#fff; border-radius:999px; padding:9px 18px; font-size:13.5px; font-weight:700;">All</span>
+    <span style="border:1px solid var(--line); border-radius:999px; padding:9px 18px; font-size:13.5px; font-weight:600; color:var(--ink-soft);">Founder notes</span>
+    <span style="border:1px solid var(--line); border-radius:999px; padding:9px 18px; font-size:13.5px; font-weight:600; color:var(--ink-soft);">Recipes</span>
+    <span style="border:1px solid var(--line); border-radius:999px; padding:9px 18px; font-size:13.5px; font-weight:600; color:var(--ink-soft);">Culture</span>
+    <span style="border:1px solid var(--line); border-radius:999px; padding:9px 18px; font-size:13.5px; font-weight:600; color:var(--ink-soft);">Behind the bowl</span>
+  </div>
+
+  <!-- FEATURED -->
+  <section style="max-width:1280px; margin:0 auto; padding:0 32px 56px;">
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="display:grid; grid-template-columns:1.15fr 1fr; gap:0; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;">
+        <div style="min-height:380px; background:#e7e2d4;"><img src="https://gamsafoods.com/cdn/shop/files/our-story-founders-image.png?v=1759188962&width=1200" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div style="padding:48px; display:flex; flex-direction:column; justify-content:center;">
+          <div style="display:flex; gap:12px; align-items:center; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:16px;">Founder notes <span style="color:var(--ink-soft); opacity:.6;">· 6 min read</span></div>
+          <h2 style="font-family:var(--fd); font-weight:700; font-size:clamp(26px,3vw,38px); letter-spacing:-.02em; line-height:1.06; margin:0 0 14px;">Why we named it Gamsa</h2>
+          <p style="font-size:15.5px; line-height:1.6; color:var(--ink-soft); margin:0 0 22px; max-width:34em;">감사 means gratitude. It's the word we grew up hearing at the breakfast table — and the feeling behind every bowl we make. Here's the story of how a childhood breakfast became a brand.</p>
+          <span style="align-self:flex-start; font-weight:700; font-size:14.5px; border-bottom:2px solid var(--accent); padding-bottom:3px;">Read the story →</span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- POST GRID -->
+  <section style="max-width:1280px; margin:0 auto; padding:0 32px 64px; display:grid; grid-template-columns:repeat(3,1fr); gap:28px;">
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/gamsa-foods-savory-oatmeal-prep.jpg?v=1759359961&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Recipes · 3 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">Add an egg: five ways to top your bowl</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">From a jammy yolk to a spoonful of chili crisp — the toppings we reach for most.</p>
+    </a>
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/what-is-juk.png?v=1759194738&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Culture · 5 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">Juk, congee, jok: a porridge that crosses borders</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">The comfort dish that shows up, in some form, in kitchens all across Asia.</p>
+    </a>
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/Shopify_8.png?v=1760032016&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Culture · 4 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">Savory &gt; sweet: rethinking the morning meal</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">Why so many of us are trading sugary breakfasts for something with backbone.</p>
+    </a>
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/why-charge-more-2-made-simple.png?v=1759189664&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Behind the bowl · 4 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">Small batches, big care</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">Why we make our oatmeal in small runs instead of big factories.</p>
+    </a>
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/homepage-callout-image-gamsa.png?v=1760384665&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Founder notes · 5 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">From a NYC kitchen to your morning</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">The long road from a recipe scribbled on a napkin to a shelf-ready bowl.</p>
+    </a>
+    <a href="post.html" style="text-decoration:none; color:inherit;">
+      <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; background:#e7e2d4; margin-bottom:16px;"><img src="https://gamsafoods.com/cdn/shop/files/Shopify_9.png?v=1760032016&width=900" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:8px;">Recipes · 3 min read</div>
+      <h3 style="font-family:var(--fd); font-weight:700; font-size:20px; letter-spacing:-.01em; line-height:1.15; margin:0 0 8px;">The desk-lunch juk that beats the 3pm slump</h3>
+      <p style="font-size:14px; line-height:1.55; color:var(--ink-soft); margin:0;">A two-and-a-half-minute bowl you can make with the office kettle.</p>
+    </a>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section style="max-width:1280px; margin:0 auto; padding:0 32px 88px;">
+    <div style="background:var(--green); color:#FBF6EE; border-radius:var(--radius); padding:clamp(40px,5vw,64px); text-align:center;">
+      <div style="font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(251,246,238,.6); font-weight:700; margin-bottom:14px;">Subscribe to the diaries</div>
+      <h2 style="font-family:var(--fd); font-weight:700; font-size:clamp(26px,3.2vw,40px); letter-spacing:-.02em; margin:0 0 14px;">New dispatches, straight to your inbox</h2>
+      <p style="font-size:16px; line-height:1.55; color:rgba(251,246,238,.82); max-width:30em; margin:0 auto 26px;">Recipes, founder notes, and first access to new flavors. No spam, ever.</p>
+      <sc-if value="{{ subscribed }}" hint-placeholder-val="{{ false }}"><div style="display:inline-block; background:rgba(251,246,238,.12); border-radius:999px; padding:13px 26px; font-size:15px; font-weight:700;">Welcome to the diaries 🎉</div></sc-if>
+      <form onSubmit="{{ subscribe }}" style="display:flex; gap:10px; max-width:440px; margin:0 auto; flex-wrap:wrap; justify-content:center;">
+        <input onChange="{{ onEmail }}" type="email" placeholder="you@email.com" style="flex:1; min-width:200px; padding:15px 18px; border-radius:999px; border:none; font-size:15px; font-family:var(--fb); background:#FBF6EE; color:#21271F;">
+        <button type="submit" style="background:var(--ink); color:#FBF6EE; border:none; cursor:pointer; padding:15px 28px; border-radius:999px; font-weight:700; font-size:15px; font-family:var(--fb);">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--green-deep); color:rgba(251,246,238,.78);">
+    <div style="max-width:1280px; margin:0 auto; padding:64px 32px 40px; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:48px;">
+      <div>
+        <div style="font-family:var(--fd); font-weight:700; font-size:28px; color:#FBF6EE; letter-spacing:-.02em;"><img src="assets/gamsa-logo-white.svg" alt="Gamsa Foods" style="height:40px; width:auto; display:inline-block;"></div>
+        <p style="font-size:14.5px; line-height:1.6; max-width:26em; margin:16px 0 18px;">Inspired by Korean savory breakfasts, our products bring comforting flavors to mornings with everyday ease.</p>
+        <a href="mailto:hello@gamsafoods.com" style="color:#FBF6EE; font-size:14px; text-decoration:none; border-bottom:1px solid rgba(251,246,238,.4);">hello@gamsafoods.com</a>
+      </div>
+      <div>
+        <div style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:rgba(251,246,238,.5); font-weight:700; margin-bottom:16px;">Site</div>
+        <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px;"><a href="collection.html" style="color:rgba(251,246,238,.82); text-decoration:none;">Shop all</a><a href="index.html#recipes" style="color:rgba(251,246,238,.82); text-decoration:none;">Recipes</a><a href="index.html#story" style="color:rgba(251,246,238,.82); text-decoration:none;">Our story</a><a href="diaries.html" style="color:rgba(251,246,238,.82); text-decoration:none;">The Persimmon Diaries</a></div>
+      </div>
+      <div>
+        <div style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:rgba(251,246,238,.5); font-weight:700; margin-bottom:16px;">Follow</div>
+        <div style="display:flex; flex-direction:column; gap:11px; font-size:14.5px;"><a href="https://www.instagram.com/gamsafoods" style="color:rgba(251,246,238,.82); text-decoration:none;">Instagram</a><a href="https://www.tiktok.com/@gamsafoods" style="color:rgba(251,246,238,.82); text-decoration:none;">TikTok</a><a href="https://www.amazon.com/Instant-Oatmeal-Protein-Breakfast-Korean-Inspired/dp/B0FSGT12TW" style="color:rgba(251,246,238,.82); text-decoration:none;">Amazon</a></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(251,246,238,.14);"><div style="max-width:1280px; margin:0 auto; padding:20px 32px; font-size:12.5px; color:rgba(251,246,238,.5);">© 2026 Gamsa Foods · Women-owned · Asian-owned · Made in NYC</div></div>
+  </footer>
+
+  <sc-if value="{{ toast }}" hint-placeholder-val="">
+    <div style="position:fixed; left:50%; bottom:30px; transform:translateX(-50%); z-index:95; background:var(--ink); color:var(--bg); padding:13px 24px; border-radius:999px; font-size:14px; font-weight:600; box-shadow:0 12px 34px rgba(0,0,0,.3);">{{ toast }}</div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props){ super(props); this.state = { email:'', subscribed:false, toast:null }; }
+  flash(msg){ this.setState({toast:msg}); clearTimeout(this._t); this._t=setTimeout(()=>this.setState({toast:null}),2400); }
+  onEmail(e){ this.setState({email:e.target.value}); }
+  subscribe(e){ if(e&&e.preventDefault) e.preventDefault(); if(!/.+@.+\..+/.test(this.state.email||'')){ this.flash('Enter a valid email'); return; } this.setState({subscribed:true}); this.flash('Welcome to the diaries'); }
+  renderVals(){ return { toast:this.state.toast, subscribed:this.state.subscribed, onEmail:(e)=>this.onEmail(e), subscribe:(e)=>this.subscribe(e) }; }
+}
+</script>
+</body>
+</html>
